@@ -2,17 +2,17 @@
 <html>
 <body>
 
-<img id="cake" onclick="switch()" src="candleON.png" width="auto" height="auto">
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.png" width="100" height="180">
 
-<h>Click the candles to blow them out! Click to light the candles again!</h>
+<p>Click the light bulb to turn on/off the light.</p>
 
 <script>
-function switch() {
-    var image = document.getElementById('cake');
-    if (image.src.match("candleON")) {
-        image.src = "candleOUT.png";
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.png";
     } else {
-        image.src = "candleON.png";
+        image.src = "pic_bulbon.png";
     }
 }
 </script>
