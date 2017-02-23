@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<img id="myImage" onclick="changeImage()" src="candleON.png" width="100" height="180">
+<img id="cake" onclick="switch()" src="candleON.png" width="auto" height="auto">
 
-<p>Click the candles to blow them out! Click to light the candles again!</p>
+<h>Click the candles to blow them out! Click to light the candles again!</h>
 
 <script>
-function changeImage() {
-    var image = document.getElementById('myImage');
+function switch() {
+    var image = document.getElementById('cake');
     if (image.src.match("candleON")) {
         image.src = "candleOUT.png";
     } else {
